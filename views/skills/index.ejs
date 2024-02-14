@@ -6,6 +6,15 @@
     <title>Developer Skills</title>
 </head>
 <body>
-    
+    <h1>List of Developer Skills</h1>
+    <ul>
+      <% skills.forEach(function(s) { %>
+        <li>
+          <%= s.skill %>
+            - 
+          <%= s.learned ? 'learned' : 'have not learned' %>
+        </li>
+      <% }); %>
+    </ul>
 </body>
 </html>
